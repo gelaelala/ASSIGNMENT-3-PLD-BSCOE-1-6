@@ -1,6 +1,6 @@
-def money_ ():
-    money = int(input('Enter the amount of money: '))
-    return money
+def money ():
+    money_ = int(input('Enter the amount of money: '))
+    return money_
 
 def price_apple ():
     price = int(input('Enter the price of the apple: '))
@@ -21,9 +21,9 @@ def change (_money, _total):
 def display (_apples, _change):
     print (f'You can buy {_apples} apples and your change is {_change} pesos.')
 
-Money = money_ ()
+Money = money ()
 Price = price_apple ()
-Apples = applesyoucanbuy ()
+Apples = applesyoucanbuy (Money, Price)
 Total = total (Apples, Price)
 Change = change (Money, Total)
 display (Apples, Change)
