@@ -15,15 +15,15 @@ def totaloranges (_orange):
     return total_oranges
 
 def total (Totalapples, Totaloranges):
-    Total_amount = int(applestotal+orangestotal)
+    Total_amount = int(apples_total+oranges_total)
     return Total_amount
 
-def display (amount):
-    print (f'The total amount is {amount}.') 
+def display (total_):
+    print (f'The total amount is {total_}.')
 
 apples = amntofapples ()
 oranges = amntoforanges ()
-applestotal = totalapples
-orangestotal = totaloranges
-Total = total
+apples_total = totalapples (apples)
+oranges_total = totaloranges (oranges)
+Total = total (apples_total, oranges_total)
 display (Total)
