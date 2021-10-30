@@ -17,5 +17,10 @@ def totaloranges ():
 def totalprice ():
     total_price = int(totalapples+totaloranges)
     return total_price
-    
-def display 
+
+def display (Total):
+    print (f'The total amount is {Total}')
+
+Apples = amntofapples ()
+Oranges = amntoforanges ()
+display ()
